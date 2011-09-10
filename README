@@ -1,4 +1,4 @@
-A plugin to make it easier to host migrations for multiple databases in one rails app.
+A plugin to make it easier to host migrations for multiple databases in one rails app.  NOTE: This has been upgraded to work with Rails 3.0.x.
 
 =======
 CONCEPT
@@ -18,7 +18,7 @@ USAGE
 
 With the plugin installed we have:
 
-  script/generate multi_migration DBName MigrationName ....
+  rails generate multi_migration MigrationName DBName ....
 
 which should accept all the options of a normal migration generation, and
 
@@ -33,5 +33,5 @@ would look for a database configuration of myapp_development. But if you specify
 ======
 CREDIT
 ======
-
-This plugin is by James Stewart - http://jystewart.net/process/
+This plugin was originally created by James Stewart - http://jystewart.net/process/
+Converted to Rails 3 by Chris Rohr http://www.nearinfinity.com/blogs/chris_rohr/

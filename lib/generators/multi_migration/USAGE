@@ -1,0 +1,8 @@
+Description:
+    Generator that creates migrations for multiple databases to run independently.
+
+Example:
+    rails generate multi_migration NAME DBNAME [field:type field:type] [options]
+
+    This will create:
+        db/migrate/DBNAME/NAME
