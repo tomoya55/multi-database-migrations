@@ -2,11 +2,11 @@
 require File.expand_path('../lib/multi-database-migrations/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["sinsoku"]
+  gem.authors       = ["jystewart", "chrisrohr", "sinsoku"]
   gem.email         = ["sinsoku.listy@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{A plugin to make it easier to host migrations for multiple databases in one rails app.}
+  gem.summary       = %q{multi-datbase-migrations}
+  gem.homepage      = "https://github.com/sinsoku/multi-datbase-migrations"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
