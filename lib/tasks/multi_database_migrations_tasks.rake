@@ -23,6 +23,7 @@ namespace :db do
       MultiMigrations.make_connection(ENV['DATABASE'])
       ActiveRecord::Migration.verbose = ENV["VERBOSE"] ? ENV["VERBOSE"] == "true" : true
       ActiveRecord::Migrator.migrate("db/migrate/#{ENV['DATABASE']}", ENV["VERSION"] ? ENV["VERSION"].to_i : nil)
+      Rake::Task["db:multi:schema:dump"].invoke if ActiveRecord::Base.schema_format == :ruby
     end
     
     namespace :migrate do
