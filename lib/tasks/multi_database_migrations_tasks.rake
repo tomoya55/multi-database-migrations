@@ -66,7 +66,7 @@ namespace :db do
       task :dump => :environment do
         MultiMigrations.make_connection(ENV['DATABASE'])
         require 'active_record/schema_dumper'
-        File.open(ENV['SCHEMA'] || "db/schema_#{ENV["DATABASE"]}.rb", "w") do |file|
+        File.open(ENV['SCHEMA'] || "db/schema_#{ENV["DATABASE"]}.rb", "w:utf-8") do |file|
           ActiveRecord::SchemaDumper.dump(ActiveRecord::Base.connection, file)
         end
       end
