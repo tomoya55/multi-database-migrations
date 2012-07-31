@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["jys@ketlai.co.uk", "crohr@nearinfinity.com", "sinsoku.listy@gmail.com"]
   gem.description   = %q{A plugin to make it easier to host migrations for multiple databases in one rails app.}
   gem.summary       = %q{multi-datbase-migrations}
-  gem.homepage      = "https://github.com/sinsoku/multi-datbase-migrations"
+  gem.homepage      = "https://github.com/chrisrohr/multi-datbase-migrations"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
