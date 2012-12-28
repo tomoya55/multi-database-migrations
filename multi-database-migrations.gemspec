@@ -2,8 +2,8 @@
 require File.expand_path('../lib/multi-database-migrations/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["jystewart", "chrisrohr", "sinsoku"]
-  gem.email         = ["jys@ketlai.co.uk", "crohr@nearinfinity.com", "sinsoku.listy@gmail.com"]
+  gem.authors       = ["jystewart", "chrisrohr", "sinsoku", 'tomoya55']
+  gem.email         = ["jys@ketlai.co.uk", "crohr@nearinfinity.com", "sinsoku.listy@gmail.com", 'hiranotomoya@gmail.com']
   gem.description   = %q{A plugin to make it easier to host migrations for multiple databases in one rails app.}
   gem.summary       = %q{multi-datbase-migrations}
   gem.homepage      = "https://github.com/chrisrohr/multi-datbase-migrations"
